@@ -43,7 +43,7 @@
 
 /* header styles  */
 
-/* nav styles */
+/* navbar styles */
 
 .navbar {
   display: flex;
@@ -113,13 +113,13 @@
 /* .card h6 {
   font-weight: 400;
 } */
-.card h5 {
+.lily {
   font-weight: 400;
 }
 
 .usd {
-  font-weight: 800;
-  margin: 20px 0;
+  font-weight: 700;
+  margin: 10px 0;
 }
 
 .plants-btn {
@@ -173,7 +173,6 @@
 }
 
 .latest-deals-container a {
-  text-decoration: none;
   color: white;
 }
 
@@ -187,19 +186,28 @@
 }
 
 .opacity {
-  -webkit-filter: contrast(0.6);
+  -webkit-filter: contrast(0.5);
 }
 
 .container {
   position: relative;
 }
 
+.text-block-small {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 20px;
+}
 .text-block {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  font-size: 2em;
+  font-size: 40px;
 }
 
 /* join bunch styles */
@@ -210,9 +218,12 @@
   background-image: url("assets/news-letter-bg.png");
   background-repeat: no-repeat;
   width: 100%;
+  height: auto;
+  background-size: 100%;
 }
 
-.join-bunch h3 {
+.join-bunch-title {
+  justify-items: center;
   color: white;
   font-size: 50px;
   font-weight: 800;
@@ -231,6 +242,14 @@
   padding: 25px 50px;
 }
 
+input::placeholder {
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  padding-left: 20px;
+}
+
+/* footer styles */
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -246,6 +265,11 @@ footer li {
 footer li a {
   text-decoration: none;
   color: #8987a1;
+}
+
+.icon {
+  display: flex;
+  gap: 25px;
 }
 
 /* responsive styles */
