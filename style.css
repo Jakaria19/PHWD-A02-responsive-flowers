@@ -284,8 +284,80 @@ footer li a:hover {
 /* responsive styles */
 
 @media screen and (max-width: 576px) {
+  .para-text {
+    font-size: 14px;
+  }
+
+  .h4-noto {
+    font-size: 24px;
+  }
+
+  .navbar ul {
+    display: hidden;
+  }
+
+  .banner-title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
   .banner {
     display: flex;
+    flex-direction: column-reverse;
+    margin: 30px 15px;
+  }
+
+  .plants {
+    margin: 0;
+  }
+
+  .plant-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flower-lover {
+    display: flex;
     flex-direction: column;
+    margin: 40px 15px;
+  }
+  .badge {
+    display: none;
+  }
+  .flower-lover-text {
+    width: 100%;
+  }
+  .latest-deals {
+    margin: 100px 20px;
+  }
+
+  .latest-deals p {
+    margin: 20px auto 100px;
+  }
+
+  .latest-deals-container {
+    /* height: 160px; */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .join-bunch {
+    padding: 80px 30px;
+  }
+  .email {
+    width: 300px;
+  }
+
+  .subs-btn {
+    padding: 15px 20px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+  }
+  .footer-logo {
+    width: 100%;
+    /* margin: 0 20px; */
   }
 }
