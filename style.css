@@ -26,6 +26,9 @@
 .para-text {
   font-size: 22px;
   color: #00000050;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 .btn-primary {
@@ -36,13 +39,15 @@
   cursor: pointer;
 }
 
-.heading-text-4 {
+.h4-noto {
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 700;
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
-/* header styles  */
-
+/* header styles starts  */
 /* navbar styles */
 
 .navbar {
@@ -66,6 +71,7 @@
 
 .navbar li a:hover {
   color: #4a4a4a;
+  font-size: 1.1em;
 }
 
 .navbar-links {
@@ -81,16 +87,13 @@
   justify-content: center;
 }
 
-.banner-orange {
+.banner-title {
   font-size: 65px;
-  font-weight: bold;
-  color: #e95a08;
+  font-weight: 700;
 }
 
-.banner-text h3 {
-  font-size: 65px;
-  font-weight: bold;
-}
+/* header styles ends */
+/* main styles starts */
 
 /* plants section */
 
@@ -110,9 +113,6 @@
   font-size: 22px;
 }
 
-/* .card h6 {
-  font-weight: 400;
-} */
 .lily {
   font-weight: 400;
 }
@@ -132,21 +132,22 @@
   display: flex;
   margin: 130px 150px;
   justify-content: space-between;
+  align-items: center;
+}
+
+.flower-badge {
+  display: flex;
 }
 
 .badge {
   width: 285px;
-  height: auto;
-  margin-top: -120px;
+  margin-top: -100px;
   margin-left: -200px;
 }
 
 .flower-lover-text {
+  width: 50%;
   align-items: center;
-}
-
-.flower-lover-text li {
-  list-style: disc;
 }
 
 /* latest deals styles */
@@ -158,11 +159,6 @@
 
 .latest-deals p {
   margin: 20px auto 120px;
-}
-
-.latest-deals-container-flex {
-  display: flex;
-  flex-direction: column;
 }
 
 .latest-deals-container {
@@ -179,6 +175,7 @@
 .latest-deals-verticle {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .latest-deals-container img {
@@ -186,7 +183,7 @@
 }
 
 .opacity {
-  -webkit-filter: contrast(0.5);
+  -webkit-filter: contrast(0.7);
 }
 
 .container {
@@ -225,8 +222,6 @@
 .join-bunch-title {
   justify-items: center;
   color: white;
-  font-size: 50px;
-  font-weight: 800;
 }
 
 .email-subs {
@@ -239,7 +234,7 @@
 }
 
 .subs-btn {
-  padding: 25px 50px;
+  padding: 15px 50px;
 }
 
 input::placeholder {
@@ -252,10 +247,13 @@ input::placeholder {
 
 footer {
   display: flex;
-  justify-content: space-between;
   margin: 50px 160px;
-  /* display: grid;
-  grid-template-columns: repeat(4, 1fr); */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 40%;
 }
 
 footer li {
@@ -265,6 +263,17 @@ footer li {
 footer li a {
   text-decoration: none;
   color: #8987a1;
+}
+
+footer li a:hover {
+  color: #4a4a4a;
+  font-size: 1.1em;
+}
+
+.footer-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .icon {
