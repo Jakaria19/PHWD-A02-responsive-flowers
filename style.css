@@ -335,7 +335,6 @@ footer li a:hover {
   /* plants section */
 
   .plants {
-    /* max-width: 576px; */
     margin: 30px 15px;
   }
 
@@ -345,7 +344,14 @@ footer li a:hover {
 
   .plant-cards-container {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 576px;
     font-size: 16px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .plant-cards-container img {
+    width: 50%;
   }
 
   /* flower lover styles */
@@ -353,6 +359,10 @@ footer li a:hover {
   .flower-lover {
     flex-direction: column;
     margin: 40px 20px;
+  }
+
+  .flower-lover img {
+    width: 100%;
   }
 
   .badge {
