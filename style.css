@@ -55,7 +55,6 @@
   justify-content: space-between;
   align-items: center;
   margin: 30px 150px;
-  /* padding: 10px 20px; */
 }
 
 .navbar ul {
@@ -131,8 +130,9 @@
 .flower-lover {
   display: flex;
   margin: 130px 150px;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  /* justify-items: right; */
 }
 
 .flower-badge {
@@ -198,6 +198,7 @@
   color: white;
   font-size: 20px;
 }
+
 .text-block {
   position: absolute;
   top: 50%;
@@ -284,6 +285,8 @@ footer li a:hover {
 /* responsive styles */
 
 @media screen and (max-width: 576px) {
+  /* shared styles */
+
   .para-text {
     font-size: 14px;
   }
@@ -292,14 +295,22 @@ footer li a:hover {
     font-size: 24px;
   }
 
-  .navbar ul {
-    display: hidden;
+  /* header styles starts  */
+  /* navbar styles */
+
+  .navbar {
+    margin: 65px 15px;
   }
 
-  .banner-title {
-    font-size: 24px;
-    font-weight: 700;
+  .sm-navbar {
+    display: none;
   }
+
+  .navbar-links {
+    padding: 10px 0;
+  }
+
+  /* banner styles */
 
   .banner {
     display: flex;
@@ -307,42 +318,82 @@ footer li a:hover {
     margin: 30px 15px;
   }
 
+  .banner-title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .banner img {
+    /* display: flex; */
+    /* justify-content: right; */
+    width: 100%;
+  }
+
+  /* header styles ends */
+  /* main styles starts */
+
+  /* plants section */
+
   .plants {
-    margin: 0;
+    /* max-width: 576px; */
+    margin: 30px 15px;
+  }
+
+  .plants p {
+    margin: 20px 0;
   }
 
   .plant-cards-container {
     grid-template-columns: repeat(2, 1fr);
+    font-size: 16px;
   }
 
+  /* flower lover styles */
+
   .flower-lover {
-    display: flex;
     flex-direction: column;
-    margin: 40px 15px;
+    margin: 40px 20px;
   }
+
   .badge {
     display: none;
   }
+
   .flower-lover-text {
     width: 100%;
   }
+
+  /* latest deals styles */
+
   .latest-deals {
     margin: 100px 20px;
   }
 
   .latest-deals p {
-    margin: 20px auto 100px;
+    margin: 20px auto 80px;
   }
 
   .latest-deals-container {
-    /* height: 160px; */
-    display: flex;
+    height: 100%;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
   }
+
+  .zabo img {
+    height: 200px;
+  }
+
+  .text-block {
+    font-size: 20px;
+  }
+
+  /* join bunch styles */
+
   .join-bunch {
     padding: 80px 30px;
+    background-size: auto;
   }
+
   .email {
     width: 300px;
   }
@@ -351,13 +402,19 @@ footer li a:hover {
     padding: 15px 20px;
   }
 
+  /* footer styles */
+
   footer {
-    display: flex;
     flex-direction: column;
-    margin: 50px 0;
+    margin: 50px 20px;
+    align-items: start;
   }
+
   .footer-logo {
     width: 100%;
-    /* margin: 0 20px; */
+  }
+
+  .footer-link-container {
+    margin: 20px 0;
   }
 }
